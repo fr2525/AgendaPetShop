@@ -1,0 +1,229 @@
+
+create table TAB_APAG.DBF (
+  CODFOR int not null 
+, DUPLICATA                  Character(10)                                       
+, DATAMOV                    Date
+, VENCTO                     Date                                     
+, VALOR                      Numeric(19,2)                              
+, NOTAFISCAL                 Character(10)                                    
+, DTPAGTO                    Date           
+, VALORPAGO                  Numeric(19, 2 )                             
+, OPERADOR                   Character(10)                                    
+, DATATUAL                   Date                                     
+)
+
+create table dbsgl.TAB_CLIE
+ Field Name                 Type       Width   Dec               
+ CODCLI                     Character      6                     
+, NOME                       Character     34                    
+, ENDERECO                   Character     34                    
+, BAIRRO                     Character     20                    
+, CIDADE                     Character     20                    
+, ESTADO                     Character      2                    
+, CEP                        Character      9                    
+, CGCCPF                     Character     16                    
+, RG                         Character     10                    
+, TELEFONE                   Character     12                    
+, CELULAR                    Character     12                    
+, DIAANIVER                  Character      2                    
+, MESANIVER                  Character      2                    
+, ANOANIVER                  Character      4                    
+, ULTCOMPRA                  Date           8                    
+, OBSERVA                    Memo           4                    
+, EMAIL                      Character     50                    
+, CONTATO                    Character     50                    
+, LIMITE                     Numeric       20, 2              
+ SALDO                      Numeric        20,  2               
+ ENDCOBRA                   Character     50                     
+ BAIRCOBRA                  Character     50                     
+ CIDACOBRA                  Character     20                     
+ UFCOBRA                    Character      2                     
+ CEPCOBRA                   Character      9                     
+ NEGATIVO                   Logical        1                     
+ INSC_EST                   Character     20                     
+ OPERADOR                   Character     10                     
+ DATATUAL                   Date           8                     
+
+create table dbsgl.TAB_DESP
+ CODIGO                     Numeric      6                                      
+ COD_OBRA                   Numeric     11                                      
+ DATA                       Date         8                                      
+ DESCRICAO                  Character   50                                      
+ VALOR                      Numeric     19 , 2        
+ OPERADOR                   Character   10                                      
+ DATATUAL                   Date         8                                      
+
+
+create table dbsgl.TAB_FINAN
+ CODIGO                     Character   5                                       
+ NOME                       Character  50                                       
+ ENDERECO                   Character  50                                       
+ BAIRRO                     Character  30                                       
+ CIDADE                     Character  30                                       
+ ESTADO                     Character   2                                       
+ CEP                        Character   9                                       
+ CGCCPF                     Character  20                                       
+ INSC_EST                   Character  14                                       
+ TELEFONE                   Character  14                                       
+ EMAIL                      Character  50                                       
+ SITE                       Character  50                                       
+ CONTATO                    Character  20                                       
+ TAXA                       Numeric    12,2         
+ COEFICIENT                 Numeric    12,6         
+ OPERADOR                   Character  10                                       
+ DATATUAL                   Date        8                                       
+
+
+create table dbsgl.TAB_FORN
+ CODFOR                     Character   6                                       
+ NOME                       Character  34                                       
+ ENDERECO                   Character  34                                       
+ BAIRRO                     Character  25                                       
+ CIDADE                     Character  20                                       
+ ESTADO                     Character   2                                       
+ CEP                        Character   8                                       
+ TELEFONE                   Character  14                                       
+ FAX                        Character  14                                       
+ CNPJ                       Character  20                                       
+ CPF                        Character  11                                       
+ INSC_EST                   Character  20                                       
+ CONTATO                    Character  15                                       
+ OBSERVACAO                 Memo        4                                       
+ EMAIL                      Character  50                                       
+ PESSOA                     Numeric     1                                       
+ OPERADOR                   Character  10                                       
+ DATATUAL                   Date        8                                       
+
+
+create table dbsgl.TAB_GRUP
+ CODGRUPO                   Character   6                                       
+ DESCRICAO                  Character  34                                       
+ INDLUCRO1                  Numeric     6,2         
+ INDLUCRO2                  Numeric     6,2         
+ ICMS                       Numeric     6,2         
+ OPERADOR                   Character  10                                       
+ DATATUAL                   Date        8                                       
+
+create table dbsgl.TAB_ITCOMP
+ CODFOR                     Character   6                                       
+ NOTAFISC                   Character  10                                       
+ ITEM                       Character   3                                       
+ CODPROD                    Character   6                                       
+ QTDE                       Numeric    19,2         
+ PRECOUNI                   Numeric    19,2         
+ PDESC                      Numeric    19,2         
+ OPERADOR                   Character  10                                     
+ DATATUAL                   Date        8                                     
+
+create table dbsgl.TAB_ITVE
+ NSU                        Character   9                                     
+ CODPROD                    Character   6                                     
+ QTDE                       Numeric     7                                     
+ PRECOCUSTO                 Numeric    19,2         
+ PRECOUNIT                  Numeric    19,2         
+ PREPROMO                   Numeric    19,2         
+ VALORTOT                   Numeric    19,2         
+ OPERADOR                   Character  10                                       
+ DATATUAL                   Date        8                                       
+
+
+create table dbsgl.TAB_LOJA
+ LOJA                       Numeric    11                                       
+ NOME                       Character  34                                       
+ ENDERECO                   Character  34                                       
+ BAIRRO                     Character  20                                       
+ CIDADE                     Character  20                                       
+ ESTADO                     Character   2                                       
+ CEP                        Character   9                                       
+ CGC                        Character  16                                       
+ INSC_EST                   Character  13                                       
+ TELEFONE                   Character  12                                       
+ TELEX                      Character   7                                       
+ CELULAR                    Character  12                                       
+ MENSAGEM1                  Character  40                                       
+ MENSAGEM2                  Character  40                                       
+ DIVCUPOM                   Logical     1                                       
+ SENHA                      Logical     1                                       
+ ATUALIZAD                  Logical     1                                       
+ OPERADOR                   Character  10                                       
+ DATATUAL                   Date        8                                       
+ PALAVRA                    Character  15                                       
+ IMPRESSO                   Character   2                                       
+
+create table dbsgl.TAB_PROD
+ CODPROD                    Character   6                                       
+ CODBAR                     Character  13                                       
+ CODGRUPO                   Numeric    11                                       
+ PRD_SUB                    Character   4                                       
+ DESCRICAO                  Character  40                                       
+ DESCRESU                   Character  16                                       
+ ESTINICIAL                 Numeric    11                                       
+ ESTATUAL                   Numeric    11                                       
+ MINIMO                     Numeric    11                                       
+ PRD_UNI                    Character   2                                       
+ CODFOR                     Numeric    20,5         
+ PRD_LUC                    Numeric    20,5         
+ PREVENDA1                  Numeric    20,5         
+ DTULTVENDA                 Date        8                                       
+ DTCADASTRO                 Date        8                                       
+ ATIVO                      Logical     1                                       
+ PRD_CFO                    Character  13                                       
+ PRD_IPI                    Numeric    20,5         
+ PRD_SIT                    Character   2                                       
+ PRD_CLF                    Character  15                                       
+ PRD_QTU                    Numeric    19,5         
+ PRD_DCA                    Numeric    19,5         
+ PRD_VLA                    Numeric    19,5         
+ PRD_DCM                    Numeric    19,5         
+ PRD_ETQ                    Character   1                                  
+ PRD_ICM                    Numeric    19,5         
+ PRD_DCP                    Numeric    19,5         
+ PRECOCUSTO                 Numeric    19,5         
+ PREVENDA2                  Numeric    19,5         
+ PREVENDA3                  Numeric    19,5         
+ PREVENDA4                  Numeric    19,5         
+ PREVENDA5                  Numeric    19,5         
+ PRD_KIT                    Logical     1                                       
+ PRD_TPP                    Character   1                                       
+ TIPOPROD                   Character  15                                       
+ FOTO_PROD                  Character 254                                       
+ OPERADOR                   Character  10                                       
+ DATATUAL                   Date        8                                       
+ DTULTCOMP                  Date        8                                       
+ CODIGO_M                   Numeric    11                                       
+
+create table dbsgl.TAB_RECE
+ COD_OBRA                   Numeric     6                                       
+ DATA                       Date        8                                       
+ BANCO                      Character  50                                       
+ NUM_CHEQUE                 Character  20                                       
+ VALOR                      Numeric    19,5         
+ OPERADOR                   Character  10                                       
+ DATATUAL                   Date        8                                       
+
+create table dbsgl.TAB_UNI
+ UNI_COD                    Character   2                                       
+ UNI_DESC                   Character  20                                       
+ UNI_QTD                    Numeric     9,2         
+ OPERADOR                   Character  10                                       
+ DATATUAL                   Date        8                                       
+
+create table dbsgl.TAB_VEND
+ NSU                        Character   9                                       
+ TIPOVENDA                  Character   1                                       
+ CODCLI                     Character   6                                       
+ DTA_VENDA                  Date        8                                       
+ CODVEND                    Character   3                                       
+ LOJA                       Character   3                                       
+ CODEMPRE                   Character   3                                       
+ CONVENIADO                 Character  12                                       
+ DESCONTO                   Numeric    19       ,                      5         
+ NFISCAL                    Character   8                                       
+ ITEM                       Character   3                                       
+ DATAFECHAD                 Date        8                                       
+ CODFINAN                   Character   5                                       
+ PARCELAS                   Numeric     3                                       
+ VLRPARC                    Currency    8        ,                     4         
+ OPERADOR                   Character  10                                       
+ DATATUAL                   Date        8                                       
+ VLRENTRA                   Currency    8         ,                    4         

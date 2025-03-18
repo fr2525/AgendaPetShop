@@ -1,0 +1,3 @@
+DEFAULT = "\aplics_vfp9\SGL"
+PATH = "\aplics_vfp9\SGL;\aplics_vfp9\SGL\classes;\aplics_vfp9\SGL\dados;\aplics_vfp9\SGL\forms;\aplics_vfp9\SGL\menus;\aplics_vfp9\SGL\prgs;\aplics_vfp9\SGL\rpts;"
+command = do "d:\aplics_vfp9\sgl\carrega.prg"

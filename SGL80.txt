@@ -1,0 +1,6 @@
+[DATABASE]
+dbsgl=j:\FABIO\aplics\vfp8.0\sgl\dados\dbsgl.mdb
+[BASENOVA]
+dbsgl=j:\FABIO\aplics\vfp8.0\sgl\dados\dbsgl.mdb
+[REPORTS]
+Listas=j:\FABIO\aplics\vfp8.0\sgl\rpt\
