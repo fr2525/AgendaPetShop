@@ -29,6 +29,29 @@ gDivcupom = .F.
 gMensa1 = "Mensagem 1"
 gMensa2 = "Mensagem 2"
 
+*--> Variavel publica onde será guardado o codigo do operador
+PUBLIC m.gOperador 
+PUBLIC m.gEmpresa
+PUBLIC m.gpalavra
+PUBLIC m.gImpresso 
+PUBLIC gSenha 
+PUBLIC gDivcupom 
+PUBLIC gMensa1 
+PUBLIC gMensa2 
+PUBLIC gDemo
+PUBLIC oldTalk 
+PUBLIC oldPath 
+PUBLIC oldDate 
+PUBLIC oldDel 
+PUBLIC oldCurrency 
+PUBLIC oldPoint 
+PUBLIC oldSeparator 
+PUBLIC oldExclusive 
+PUBLIC oldReprocess 
+PUBLIC oldRefresh 
+
+
+gOperador = "99"
 gDemo = .F.
 
 *!*	SET DEFA TO
@@ -62,6 +85,17 @@ SET DATABASE TO DbSGL
 *!*	*OPEN DATABASE Dbsgl.mdb SHARED 
 *!*	OPEN DATABASE (lcdatabase)
 *!*	*SET DATABASE TO (lcdatabase)
+
+oldTalk = SET("talk")
+oldPath = SET("path")
+oldDate = SET("date")
+oldDel = SET("Deleted" )
+oldCurrency = SET("Currency",1)
+oldPoint = SET("point")
+oldSeparator = SET("Separator")
+oldExclusive = SET("Exclusive" )
+oldReprocess = SET("Reprocess")
+oldRefresh = SET("refresh")
 
 SET DATE BRITI
 SET CENTURY ON
